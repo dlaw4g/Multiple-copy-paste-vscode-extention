@@ -1,0 +1,98 @@
+{
+  "name": "multiple-copy-paste",
+  "displayName": "multiple copy paste",
+  "description": "An extension for multiple clipboard management",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+     
+      {
+        "command": "multiClipboard.copySelection1",
+        "title": "Copy Text 1",
+        "keybindings": [
+            {
+                "key": "ctrl+shift+c",
+                "when": "editorTextFocus && editorHasSelection"
+            }
+        ]
+    },
+    {
+        "command": "multiClipboard.copySelection2",
+        "title": "Copy Text 2",
+        "keybindings": [
+            {
+                "key": "ctrl+alt+c",
+                "when": "editorTextFocus && editorHasSelection"
+            }
+        ]
+    },
+    {
+      "command": "multiClipboard.copySelection3",
+      "title": "Copy Text 3",
+      "keybindings": [
+          {
+              "key": "ctrl+d+ctrl+c",
+              "when": "editorTextFocus && editorHasSelection"
+          }
+      ]
+  },
+    {
+        "command": "multiClipboard.pasteSelection1",
+        "title": "Paste Text 1",
+        "keybindings": [
+            {
+                "key": "ctrl+shift+v",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    {
+        "command": "multiClipboard.pasteSelection2",
+        "title": "Paste Text 2",
+        "keybindings": [
+            {
+                "key": "ctrl+alt+v",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+      {
+        "command": "multiClipboard.pasteSelection3",
+        "title": "Paste Text 3",
+        "keybindings": [
+            {
+                "key": "ctrl+d+ctrl+v",
+                "when": "editorTextFocus"
+            }
+        ]
+    }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.89.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
