@@ -68,9 +68,9 @@ Fixed issue #.
 
 ## Examples Link
 
-This is for up to three texts copy and paste example [Example 1](https://youtu.be/r6t3-pfe3So)
+This is for dual copy and paste example [Example 1](https://youtu.be/r6t3-pfe3So)
 
-This is for dual copy and paste example [Example 2](https://youtu.be/1YiLTlDT8ZM)
+ This is for up to three texts copy and paste example  [Example 2](https://youtu.be/1YiLTlDT8ZM)
 
 
 
