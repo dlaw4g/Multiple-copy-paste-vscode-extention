@@ -2,6 +2,10 @@
   "name": "multiple-copy-paste",
   "displayName": "multiple copy paste",
   "description": "An extension for multiple clipboard management",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dlaw4g/Multiple-copy-paste-vscode-extention.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.89.0"
